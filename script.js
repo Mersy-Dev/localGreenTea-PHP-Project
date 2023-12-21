@@ -57,7 +57,7 @@ function resetTimer() {
     timerId = setInterval(scrollRight, 5000);
 }
 
-/* ---------- scroll events  ---------*/
+/* ---------- scroll event  ---------*/
 slider.addEventListener('click', function(ev){
     if(ev.target === leftArrow){
         scrollLeft();
