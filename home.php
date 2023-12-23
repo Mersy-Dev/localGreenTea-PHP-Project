@@ -186,6 +186,89 @@ include 'components/connection.php';
                 </div>
             </div>
         </section>
+
+        <section class="shop-category">
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/6.jpg" alt="">
+                    <div class="detail">
+                        <span>BIG OFFERS</span>
+                        <h1>Extra 15% off</h1>
+                        <a href="view_products.php" class="btn">shop now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/7.jpg" alt="">
+                    <div class="detail">
+                        <span>new in taste</span>
+                        <h1>Coffee House</h1>
+                        <a href="view_products.php" class="btn">shop now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/icon2.png" alt="">
+                    <div class="detail">
+                        <h3>great savings</h3>
+                        <p>save big every order</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img src="img/icon1.png" alt="">
+                    <div class="detail">
+                        <h3>24*7 support</h3>
+                        <p>one-on-one support</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/icon0.png" alt="">
+                    <div class="detail">
+                        <h3>gift vouchers</h3>
+                        <p>vouchers on every fetivals</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/icon.png" alt="">
+                    <div class="detail">
+                        <h3>worldwide delivery</h3>
+                        <p>dropship  worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand">
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/brand (1).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="img/brand (2).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="img/brand (3).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="img/brand (4).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="img/brand (5).jpg" alt="">
+                </div>
+                
+            </div>
+        </section>
         <?php include 'components/footer.php'; ?>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>

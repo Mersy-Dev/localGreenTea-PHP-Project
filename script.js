@@ -58,15 +58,52 @@ function resetTimer() {
 }
 
 /* ---------- scroll event  ---------*/
-slider.addEventListener('click', function(ev){
-    if(ev.target === leftArrow){
+slider.addEventListener('click', function (ev) {
+    if (ev.target === leftArrow) {
         scrollLeft();
         resetTimer();
     }
-    else if(ev.target === rightArrow){
+    else if (ev.target === rightArrow) {
         scrollRight();
         resetTimer();
     }
 
 });
 
+
+/* ---------- testimonial slider  ---------*/
+// let slides = document.querySelectorAll('.testimonial-item');
+// let index = 0;
+
+// function nextSlide() {
+//     slides[index].classList.remove('active');
+//     index = (index + 1) % slides.length;
+//     slides[index].classList.add('active');
+// }
+
+// function prevSlide() {
+//     slides[index].classList.remove('active');
+//     index = (index - 1 + slides.length) % slides.length;
+//     slides[index].classList.add('active');
+// } 
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     let slides = document.querySelectorAll('.testimonial-item');
+//     let index = 0;
+
+//     function nextSlide() {
+//         slides[index].classList.remove('active');
+//         index = (index + 1) % slides.length;
+//         slides[index].classList.add('active');
+//     }
+
+//     function prevSlide() {
+//         slides[index].classList.remove('active');
+//         index = (index - 1 + slides.length) % slides.length;
+//         slides[index].classList.add('active');
+//     }
+
+//     // Assign event listeners to your arrow elements
+//     document.querySelector('.right-arrow').addEventListener('click', nextSlide);
+//     document.querySelector('.left-arrow').addEventListener('click', prevSlide);
+// });
