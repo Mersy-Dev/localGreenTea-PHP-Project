@@ -102,23 +102,30 @@ if (isset($_POST['add_to_cart'])) {
             <?php
                 if(isset($_GET['pid'])){
                     $pid = $_GET['pid'];
-                    $select_product = $conn->prepare("SELECT * FROM products WHERE id = '$pid'");
-                    $select_product->execute();
+                    $select_products = $conn->prepare("SELECT * FROM products WHERE id = '$pid'");
+                    $select_products->execute();
                     if($select_products->rowcount()>0){
-                        while($fetch_products = $select_product->fetch(PDO::FETCH_ASSOC)){
+                        while($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)){
 
                       
             ?>
             <form method="post" action="">
                 <img src="image/<?php echo $fetch_products['image']; ?>" alt="">
                 <div class="detail">
-                    <div class="price"><?php echo $fetch_products['price']?></div>
+                    <div class="price">$<?php echo $fetch_products['price']?>/-</div>
                     <div class="name"><?php echo $fetch_products['name']?></div>
-                    <div class="product-detail">
+                    <div class="detail">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni corporis itaque sint illo pariatur saepe in non dolorum voluptates illum iusto, vitae alias recusandae labore hic eius esse quae, explicabo nostrum, unde quidem quia. Necessitatibus explicabo nostrum expedita dicta assumenda?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni corporis itaque sint illo pariatur saepe in non dolorum voluptates illum iusto, vitae alias recusandae labore hic eius esse 
                             quae, explicabo nostrum, unde quidem quia. Necessitatibus explicabo nostrum expedita dicta assumenda?</p>
                     </div>
+                    <input type="hidden" name="product_id" value="<?php echo $fetch_products['id'];?>">
+                    <div class="button">
+                        <button type="submit" name="add_to_wishlist" class="btn"> add to wishlist <i class="bx bx-heart"></i></button>
+                        <input type="hidden" name="qty" value="1" min="0" class="quantity">
+                        <button type="submit" name="add_to_cart" class="btn"> add to cart <i class="bx bx-cart"></i></button>
 
+
+                    </div>
                 </div>
             </form>
            <?php
