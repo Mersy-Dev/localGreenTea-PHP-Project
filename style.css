@@ -1115,6 +1115,39 @@ footer .bottom-footer {
     height: 90%;
 }
 
+.products form img{
+    padding: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 60%;
+    height: 70%;
+    margin-top: 80px;
+}
+
+.products .box-container .box{
+    height: 600px;
+    padding: 20px 30px;
+}
+.products .box-container .box .button{
+    position: absolute;
+    right: 1%;
+    bottom: 15%;
+    background: var(--light-green);
+    padding: .5rem 1.5rem;
+}
+.products form{
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    margin: 1rem;
+    padding: 1.5rem;
+    height: 300px;
+    
+}
+
+.products .box-container .box .name{
+    margin-top: 20px;
+}
 .view_page form .name{
     font-size: 2rem;
     text-transform: capitalize;

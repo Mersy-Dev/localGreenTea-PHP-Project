@@ -82,7 +82,7 @@ if (isset($_POST['add_to_cart'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <title>Green Coffee - shop page</title>
+    <title>Green Coffee - Product detail</title>
 </head>
 
 <body>
