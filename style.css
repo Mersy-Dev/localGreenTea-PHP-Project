@@ -877,6 +877,7 @@ textarea {
     border-radius: 20px;
     background: var(--light-green);
     padding: .5rem 1.5rem;
+
 }
 
 .products .box-container .box .button i,
@@ -917,15 +918,19 @@ textarea {
    border-radius: .5rem;
    font-size: 1.7rem;
    color: #fff;
-   height: 3.5rem;
+   height: 2.7rem;
    width: 4.5rem;
    cursor: pointer;
+   background: var(--green);
+   margin-left: 1rem;
+   margin-top: 2.4rem;
 }
 .products .box-container .box .fles{
     margin-top: 3rem;
 }
 .products .box-container .box .flex .fa-edit:hover{
     background: var(--light-green);
+    color: #000;
 }
 
 .products .box-container .box .sub-total{
@@ -1120,11 +1125,11 @@ footer .bottom-footer {
     box-shadow: var(--box-shadow);
     width: 60%;
     height: 70%;
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 .products .box-container .box{
-    height: 600px;
+    height: 630px;
     padding: 20px 30px;
 }
 .products .box-container .box .button{
@@ -1148,6 +1153,11 @@ footer .bottom-footer {
 .products .box-container .box .name{
     margin-top: 20px;
 }
+
+.products .box-container .box .img{
+    height: 400px;
+}
+
 .view_page form .name{
     font-size: 2rem;
     text-transform: capitalize;

@@ -53,8 +53,8 @@ if (isset($_POST['delete_item'])) {
     $verify_delete_items->execute([$wishlist_id, $user_id]);
 
     if ($verify_delete_items->rowCount() > 0) {
-        $delete_item = $conn->prepare("DELETE FROM wishlist WHERE id = ? AND user_id = ?");
-        $delete_item->execute([$wishlist_id, $user_id]);
+        $delete_wishlist_id = $conn->prepare("DELETE FROM wishlist WHERE id = ? AND user_id = ?");
+        $delete_wishlist_id->execute([$wishlist_id, $user_id]);
         $success_msg[] = "Item deleted from wishlist";
     } else {
         $warning_msg[] = "item not found";
@@ -126,7 +126,7 @@ if (isset($_POST['delete_item'])) {
                                     </form>
 
                                 <?php
-                                $grand_total += $fetch_products['price'];
+                                $grand_total += $fetch_wishlist['price'];
                             }
                         }
                     }else {
