@@ -1134,6 +1134,7 @@ footer .bottom-footer {
 }
 .products .box-container .box .button{
     position: absolute;
+    z-index: 1;
     right: 1%;
     bottom: 15%;
     background: var(--light-green);
@@ -1317,10 +1318,83 @@ footer .bottom-footer {
 
 }
 
+.orders .box-container
 
+.products .box-container .box .image{
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
 
+}
 
+/* order page */
 
+.orders .box-container{
+    padding: 2% 6%;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.orders .box-container .box{
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.orders .box-container .box a{
+    display: flex;
+    align-items: center;
+}
+
+.orders .box-container .box a .row{
+    position: absolute;
+    right: 1%;
+}
+
+.orders .box-container .box .date{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 1.5rem;
+    background: var(--light-green);
+    font-size: 0.6rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    border-radius: .5rem;
+}
+
+.orders .box-container .box .image{
+    width: 100%;
+    height: 20rem;
+    object-fit: contain;
+}
+
+.orders .box-container .box .name{
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #000;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+}
+
+.orders .box-container .box .price{
+    font-size: 1rem;
+    color: orange;
+    
+}
+
+.orders .box-container .box .status{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    text-transform: capitalize;
+}
+
+.orders .box-container .box:hover{
+    box-shadow: var(--box-shadow)
+}
 
 /*--------media screen---------*/
 
